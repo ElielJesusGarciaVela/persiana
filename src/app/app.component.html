@@ -17,6 +17,7 @@
     <span>Estado recibido: {{this.estadoPersiana}}</span>
     @if (this.habitacionHabilitada) {
       <app-habitacion
+      [corrienteHabitacion]="this.habitacionHabilitada"
       (estadoPersianaOutput)="onCambioEstadoPersiana($event)"></app-habitacion>
     }
     

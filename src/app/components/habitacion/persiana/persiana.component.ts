@@ -10,7 +10,7 @@ export class PersianaComponent {
 
   persianaEstado = false;
 
-  persianaOutput = output<String>();
+  persianaOutput = output<string>();
 
   onClickSubirBajar(event: Event){
     let subBaj = event.target as HTMLButtonElement

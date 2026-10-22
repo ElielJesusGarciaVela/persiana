@@ -16,7 +16,7 @@ export class AppComponent {
 
   habitacionHabilitada = false;
 
-  estadoPersiana: String = '';
+  estadoPersiana = '';
 
   //eventos-dom
   onConcetarDesconectar(event: Event){
@@ -33,7 +33,7 @@ export class AppComponent {
     habDes.innerText = this.habitacionHabilitada ? 'Deshabilitar' : 'Habilitar';
   }
 
-  onCambioEstadoPersiana(event: String){
+  onCambioEstadoPersiana(event: string){
     this.estadoPersiana = event
   }
 }

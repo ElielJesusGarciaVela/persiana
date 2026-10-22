@@ -1,7 +1,34 @@
+:host {
+  display: block;
+}
+
 .app-habitacion {
-    border: 3px solid #000000;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 0px 20px 0px 20px;
-    background-color: beige;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+  border: 1px solid #e5eaf0;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.app-habitacion h1 {
+  margin: 0 0 0.85rem;
+  color: #344054;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.app-habitacion p {
+  margin: 0.35rem 0;
+  color: #667085;
+  font-size: 0.92rem;
+}
+
+.app-habitacion p i {
+  color: #98a2b3;
+  font-size: 0.8rem;
+}
+
+app-persiana {
+  display: block;
+  margin-top: 0.85rem;
 }

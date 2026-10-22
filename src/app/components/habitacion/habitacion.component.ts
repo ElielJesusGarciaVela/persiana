@@ -1,4 +1,4 @@
-import { Component, input, output, SimpleChanges } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { PersianaComponent } from './persiana/persiana.component';
 
 @Component({
@@ -10,14 +10,14 @@ import { PersianaComponent } from './persiana/persiana.component';
 export class HabitacionComponent {
   persianaInput = input<String>();
 
-  persianaOutput = output<String>();
+  estadoPersianaOutput = output<string>();
 
   corrienteHabitacion = input<boolean>();
 
   habitacionInput = input<boolean>();
 
-  onPersianaCambioEstado(estado: String) {
-    this.persianaOutput.emit(estado);
+  onPersianaCambioEstado(estado: string) {
+    this.estadoPersianaOutput.emit(estado);
   }
 
   // onCambioEstadoPersiana(estado: String){
