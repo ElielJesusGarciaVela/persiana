@@ -17,7 +17,7 @@
     <span>Estado recibido: {{this.estadoPersiana}}</span>
     @if (this.habitacionHabilitada) {
       <app-habitacion
-      (estadoPersianaOutput)="onCambioEstadoPersiana(estadoPersiana)"></app-habitacion>
+      (estadoPersianaOutput)="onCambioEstadoPersiana($event)"></app-habitacion>
     }
     
   }

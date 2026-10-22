@@ -5,17 +5,20 @@ import { PersianaComponent } from './persiana/persiana.component';
   selector: 'app-habitacion',
   imports: [PersianaComponent],
   templateUrl: './habitacion.component.html',
-  styleUrl: './habitacion.component.css'
+  styleUrl: './habitacion.component.css',
 })
 export class HabitacionComponent {
-
-  persianaInput = input<String>()
+  persianaInput = input<String>();
 
   persianaOutput = output<String>();
 
-  corrienteHabitacion = input<boolean>()
+  corrienteHabitacion = input<boolean>();
 
-  habitacionInput = input<boolean>()
+  habitacionInput = input<boolean>();
+
+  onPersianaCambioEstado(estado: String) {
+    this.persianaOutput.emit(estado);
+  }
 
   // onCambioEstadoPersiana(estado: String){
   //   this.persianaOutput = estado

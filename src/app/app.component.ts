@@ -33,7 +33,7 @@ export class AppComponent {
     habDes.innerText = this.habitacionHabilitada ? 'Deshabilitar' : 'Habilitar';
   }
 
-  onCambioEstadoPersiana(estado: String){
-    this.estadoPersiana = estado
+  onCambioEstadoPersiana(event: String){
+    this.estadoPersiana = event
   }
 }
