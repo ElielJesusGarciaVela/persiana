@@ -1,0 +1,10 @@
+<div class="app-persiana">
+  <h1>PERSIANA</h1>
+  <div>
+    <p>Persiana ID:</p>
+    <span>Estado: {{ this.persianaEstado ? "Subida" : "Bajada" }}</span>
+  </div>
+  <div>
+    <button (click)="onClickSubirBajar($event)">Subir</button>
+  </div>
+</div>
